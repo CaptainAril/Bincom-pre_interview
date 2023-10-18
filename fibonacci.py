@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+"""Computes and prints the sum of the first 50 fibonacci sequence."""
+
 def fibonacci_series(n):
     """Returns a list of `n` number of fibonacci sequence"""
     series = [0, 1]

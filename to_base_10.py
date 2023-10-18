@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Script that generates random 4 digits number of 0s and 1s
+and converts the generated nuber to base 10.
+"""
 
 import random
 

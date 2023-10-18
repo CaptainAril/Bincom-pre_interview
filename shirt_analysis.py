@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+"""Performs statistical analysis of data given in webpage `python_class_question.html`
+showing the colors of dresses put on by Bincom staffs for the week.
+"""
+
 import re
 import psycopg2
 from collections import Counter
