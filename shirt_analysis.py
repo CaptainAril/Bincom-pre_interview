@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import re
 import psycopg2
 from collections import Counter
@@ -62,8 +64,8 @@ cursor = conn.cursor()
 cursor.execute("CREATE TABLE IF NOT EXISTS color_frequency (color VARCHAR(255) PRIMARY KEY,frequency INT)")
 
 # Insert color and frequencies for sorted dict
-# for key, val in sorted_colors.items():
-#     cursor.execute("""INSERT INTO color_frequency (color, frequency) VALUES (%s, %s)""", (key, val))
+for key, val in sorted_colors.items():
+    cursor.execute("""INSERT INTO color_frequency (color, frequency) VALUES (%s, %s)""", (key, val))
 
 
 # Commit changes and close connection
